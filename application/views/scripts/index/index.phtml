@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title><? echo $this->escape($this->title); ?></title>
+        <link rel="stylesheet" href="<?php echo $request->getBaseURL();?>/public/style/tyle-original.css" />
+    </head>
+    <body>
+        <div class="page">
+            <header>
+                <div id="title">
+                    TYTUŁ
+                </div>
+                <nav>
+                    <ul id="menu">
+                        <li>aaaaa</li>
+                        <li>nnnnnn</li>
+                    </ul>
+                </nav>
+            </header>
+            <section id="main">
+                <h1><? echo $this->escape($this->title); ?></h1>
+                <?=$this->escape($this->wellcome);?>
+                <p>&nbsp;</p>
+                <?=$this->escape($this->webmaster);?>
+            </section>
+            <footer>
+                ® 2012 Kempczyński Paweł | Segin Łukasz | Szawerdak Tomasz
+            </footer>
+        </div>
+    </body>
+</html>
